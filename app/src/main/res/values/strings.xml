@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Odev2FMSS</string>
+    <string name="lets_get_started_text_view">Let\'s Get Started</string>
+    <string name="grow_together_text_view">Grow Together</string>
+    <string name="join_now_button">JOIN NOW</string>
+
+
+    <string name="welcome_back_text">Welcome Back!</string>
+    <string name="enter_your_user_name_pass_text">Enter Your Username \&amp; Password</string>
+    <string name="login_username_text">Username</string>
+    <string name="login_password_text">Password</string>
+    <string name="login_button">LOGIN</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="or_create_a_new_account">or Create a New Account</string>
+    <string name="create_account_text">Create Account :)</string>
+    <string name="create_username_text">Create Username</string>
+    <string name="enter_email_id_text">Enter Email Id</string>
 </resources>

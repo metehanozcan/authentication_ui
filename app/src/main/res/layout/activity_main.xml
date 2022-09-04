@@ -1,18 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <data>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/main_background"
+            android:layout_width="643dp"
+            android:layout_height="713dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="-130dp"
+            android:src="@drawable/ic_main_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/person_image"
+            android:layout_width="165dp"
+            android:layout_height="165dp"
+            android:layout_marginStart="175dp"
+            android:layout_marginTop="283dp"
+            android:src="@drawable/ic_person"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/person_image2"
+            android:layout_width="103dp"
+            android:layout_height="103dp"
+            android:layout_marginStart="249dp"
+            android:layout_marginTop="164dp"
+            android:layout_marginEnd="76dp"
+            android:src="@drawable/ic_person_two"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="99dp"
+            tools:layout_editor_absoluteY="439dp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/lets_get_started_text_view"
+            android:layout_width="342dp"
+            android:layout_height="190dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/inter_extrabold"
+            android:gravity="top"
+            android:lineSpacingExtra="-16sp"
+            android:text="@string/lets_get_started_text_view"
+            android:textAppearance="@style/lets_get_started"
+            android:textFontWeight="800"
+            app:fontFamily="@font/inter_extrabold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/person_image" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/grow_together_text_view"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="166dp"
+            android:fontFamily="@font/inter"
+            android:gravity="top"
+            android:lineHeight="24dp"
+            android:text="@string/grow_together_text_view"
+            android:textAppearance="@style/grow_together"
+            android:textFontWeight="500"
+            app:fontFamily="@font/inter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/lets_get_started_text_view" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/join_button"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="281dp"
+            android:layout_height="62dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="80dp"
+            android:fontFamily="@font/inder"
+            android:text="@string/join_now_button"
+            android:textColor="#FFFFFF"
+            android:textFontWeight="400"
+            android:textSize="36sp"
+            app:backgroundTint="#000000"
+            app:cornerRadius="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/grow_together_text_view" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
